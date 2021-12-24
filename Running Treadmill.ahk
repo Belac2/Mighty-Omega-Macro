@@ -64,9 +64,9 @@
             {
                Click , 409, 296
                Sleep 16
-            } Until A_TickCount - StartTime1 > 5000
+            } Until A_TickCount - StartTime1 > 6000
          }
-      } Until A_TickCount - StartTime > 59000
+      }  Until A_TickCount - StartTime > 59500
       StartTime2 := A_TickCount
       Loop ,
       {
