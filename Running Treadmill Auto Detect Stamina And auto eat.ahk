@@ -165,13 +165,131 @@
             if temp = 5
             {
                temp = 0
-               eat = 3
+               eat = 5
             }
+         }
+         if eat = 5
+         {
+            temp++
+            Sleep 1000
+            Click , 410, 340
+            Sleep 100
+            Send 6
+            Sleep 50
+            Send {Click}
+            Sleep 5000
+            Send 6
+            4 := A_TickCount
+            Loop ,
+            {
+               Click , 409, 296
+               Sleep 16
+            } Until A_TickCount - 4 > 1000
+            if temp = 5
+            {
+               temp = 0
+               eat = 6
+            }
+         }
+         if eat = 6
+         {
+            temp++
+            Sleep 1000
+            Click , 410, 340
+            Sleep 100
+            Send 7
+            Sleep 50
+            Send {Click}
+            Sleep 5000
+            Send 7
+            4 := A_TickCount
+            Loop ,
+            {
+               Click , 409, 296
+               Sleep 16
+            } Until A_TickCount - 4 > 1000
+            if temp = 5
+            {
+               temp = 0
+               eat = 7
+            }
+         }
+         if eat = 6
+         {
+            temp++
+            Sleep 1000
+            Click , 410, 340
+            Sleep 100
+            Send 8
+            Sleep 50
+            Send {Click}
+            Sleep 5000
+            Send 8
+            4 := A_TickCount
+            Loop ,
+            {
+               Click , 409, 296
+               Sleep 16
+            } Until A_TickCount - 4 > 1000
+            if temp = 5
+            {
+               temp = 0
+               eat = 7
+            }
+         }
+         if eat = 7
+         {
+            temp++
+            Sleep 1000
+            Click , 410, 340
+            Sleep 100
+            Send 9
+            Sleep 50
+            Send {Click}
+            Sleep 5000
+            Send 9
+            4 := A_TickCount
+            Loop ,
+            {
+               Click , 409, 296
+               Sleep 16
+            } Until A_TickCount - 4 > 1000
+            if temp = 5
+            {
+               temp = 0
+               eat = 8
+            }
+         }
+         if eat = 8
+         {
+            temp++
+            Sleep 1000
+            Click , 410, 340
+            Sleep 100
+            Send 0
+            Sleep 50
+            Send {Click}
+            Sleep 5000
+            Send 0
+            4 := A_TickCount
+            Loop ,
+            {
+               Click , 409, 296
+               Sleep 16
+            } Until A_TickCount - 4 > 1000
+            if temp = 5
+            {
+               temp = 0
+               eat = 9
+            }
+         }
+         if eat = 9
+         {
+            Send !{f4}
+            Reload
          }
       }
       Sleep 19000
    }
    Return
    end::Reload
-
-
