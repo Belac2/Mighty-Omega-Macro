@@ -42,7 +42,13 @@ First step is you want to install autohotkey
 
 1. Download Autohotkey at [this](https://www.autohotkey.com/)
 2. Install Program
-  
+
+### Tutorial
+• How to Download it? [this](https://youtu.be/Y02T8AiiJxw)
+• Strike Power Macro Tutorial [this](https://www.youtube.com/watch?v=2j5-CR7V6z8&ab_channel=Vivacious)
+• Treamill Macro Tutorial [this](https://youtu.be/YPV8Hmhqo9U)
+
+
 <!-- <p align="right">(<a href="#top">back to top</a>)</p>
 
 
