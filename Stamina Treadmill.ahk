@@ -63,16 +63,15 @@
             {
                Click , 409, 296
                Sleep 16
-            } Until A_TickCount - StartTime1 > 12000
+            } Until A_TickCount - StartTime1 > 8000
          }
-      } Until A_TickCount - StartTime > 59000
+      } Until A_TickCount - StartTime > 59500
       StartTime2 := A_TickCount
       Loop ,
       {
          Click , 409, 296
          Sleep 16
       } Until A_TickCount - StartTime2 > 6000
-      Sleep 19000
       PixelSearch , x, y, 70, 144, 80, 146, 0x444444, , Fast
       If ErrorLevel = 0
       {
