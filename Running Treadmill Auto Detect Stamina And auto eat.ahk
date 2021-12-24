@@ -5,7 +5,7 @@
 
    eat = 1
    temp = 0
-   ^F1::
+   F1::
    CoordMode , Pixel, Window
    SendInput , {w down}{w up}{w down}{s down}
    Sleep 6000
@@ -13,7 +13,7 @@
    SendInput , {w up}{s up}
    Return
    
-   ^F2::
+   F2::
    Loop ,
    {
       CoordMode , Click, Window
