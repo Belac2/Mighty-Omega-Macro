@@ -20,15 +20,15 @@
       Click , 520, 310
       Sleep 1000
       Click , 340, 370
-      Sleep 100
+      Sleep 200
       Click , 340, 340
-      Sleep 100
+      Sleep 200
       Click , 340, 310
-      Sleep 100
+      Sleep 200
       Click , 340, 280
-      Sleep 100
+      Sleep 200
       Click , 340, 250
-      Sleep 100
+      Sleep 200
       Click , 410, 355
       Sleep 3000
       StartTime := A_TickCount
