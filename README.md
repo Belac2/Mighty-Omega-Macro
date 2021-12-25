@@ -43,11 +43,21 @@ First step is you want to install autohotkey
 1. Download Autohotkey at [this](https://www.autohotkey.com/)
 2. Install Program
 
-### Tutorial
+### Download Macro
+
 • How to Download it? [this](https://youtu.be/Y02T8AiiJxw)
-• Strike Power Macro Tutorial [this](https://www.youtube.com/watch?v=2j5-CR7V6z8&ab_channel=Vivacious)
-• Treamill Macro Tutorial [this](https://youtu.be/YPV8Hmhqo9U)
-• Barbell Macro Tutorial [this](https://youtu.be/E8D3PhUnleY)
+
+### Tutorial
+  • Strike Power Macro Tutorial [this](https://www.youtube.com/watch?v=2j5-CR7V6z8&ab_channel=Vivacious) 
+  
+  • Treamill Macro Tutorial [this](https://youtu.be/YPV8Hmhqo9U) 
+  
+  • Barbell Macro Tutorial [this](https://youtu.be/E8D3PhUnleY) 
+  
+  • Push up Squat Macro Tutorial [this](https://www.youtube.com/watch?v=eES7TH1K1K4&ab_channel=Vivacious) 
+  
+  • Strike Speed Macro Tutorial [this](https://youtu.be/opPhuuLb54Q)
+
 
 
 <!-- <p align="right">(<a href="#top">back to top</a>)</p>
