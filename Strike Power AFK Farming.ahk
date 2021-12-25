@@ -1,4 +1,4 @@
-﻿
+
 end::reload
 
 f1::
@@ -52,7 +52,7 @@ f1::
             }
             If eat >= 5
             {
-                Sleep 1000
+                Sleep 200
                 Send 1
                 MouseMove, 118, 300, 5
                 Sleep 1000
@@ -75,6 +75,12 @@ f1::
             }
         }
         PixelSearch, x, y, 186, 565, 187, 566, 0xEBEBEB,, Fast
+        If ErrorLevel = 0
+        {
+            Send !{f4}
+            Reload
+        }
+        PixelSearch, x, y, 39, 159, 41, 161, 0x9299BC,, Fast
         If ErrorLevel = 0
         {
             Send !{f4}
