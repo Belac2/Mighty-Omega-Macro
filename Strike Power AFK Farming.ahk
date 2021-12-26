@@ -1,6 +1,7 @@
 
 end::reload
-
+eat = 1
+Rythm = 0
 f1::
 {  
     CoordMode Pixel, Window
@@ -11,7 +12,6 @@ f1::
     PixelGetColor, color1, 245, 133,
     Loop,
     {
-        
         PixelSearch, x, y, 184, 132, 186, 134, color1,, Fast 
         if ErrorLevel = 0
         {
@@ -30,63 +30,182 @@ f1::
             Sleep 4000
             Sendinput {w up}{s up}
         }
-        PixelSearch, x, y, 40, 132, 65, 134, color1,, Fast 
+
+        PixelSearch, x, y, 40, 132, 65, 134, color1,, Fast  ; if too low stam
         if ErrorLevel = 0
         {
             Sleep 10000
         }
-        PixelSearch, x, y, 70, 144, 80, 146, 0x444444,, Fast
+        
+        PixelSearch , x, y, 70, 144, 80, 146, 0x444444, , Fast ; food under 50%
         If ErrorLevel = 0
         {
-            if eat <= 5
+            if eat = 1
             {
-                eat++
-                Sleep 100
+                temp++
+                Rythm = 0
                 Send 2
-                Sleep 50 
+                Sleep 50
                 Send {Click}
                 Sleep 5000
-                Send 1
-                Sleep 100
-                Rythm = 0
-            }
-            If eat >= 5
-            {
+                Send 2
                 Sleep 200
                 Send 1
-                MouseMove, 118, 300, 5
-                Sleep 1000
-                SendInput, {VKC0}
-                Sleep 500
-                MouseMove, 118, 220, 5
-                Sleep 100
-                Send {Click down}
-                Sleep 100
-                MouseMove, 160, 562, 5
-                Sleep 100
-                Send {Click up}
-                Sleep 100
-                SendInput, {VKC0}
-                MouseMove, 118, 300, 5
-                Send 1
-                Sleep 1000
-                eat = 0
+                if temp = 5
+                {
+                    temp = 0
+                    eat = 2
+                }
+            }
+            if eat = 2
+            {
+                temp++
                 Rythm = 0
+                Send 3
+                Sleep 50
+                Send {Click}
+                Sleep 5000
+                Send 3
+                Sleep 200
+                Send 1
+                if temp = 5
+                {
+                    temp = 0
+                    eat = 3
+                }
+            }
+            if eat = 3
+            {
+                temp++
+                Rythm = 0
+                Send 4
+                Sleep 50
+                Send {Click}
+                Sleep 5000
+                Send 4
+                Sleep 200
+                Send 1
+                if temp = 5
+                {
+                    temp = 0
+                    eat = 4
+                }
+            }
+            if eat = 4
+            {
+                temp++
+                Rythm = 0
+                Send 5
+                Sleep 50
+                Send {Click}
+                Sleep 5000
+                Send 5
+                Sleep 200
+                Send 1
+                if temp = 5
+                {
+                    temp = 0
+                    eat = 5
+                }
+            }
+            if eat = 5
+            {
+                temp++
+                Rythm = 0
+                Send 6
+                Sleep 50
+                Send {Click}
+                Sleep 5000
+                Send 6
+                Sleep 200
+                Send 1
+                if temp = 5
+                {
+                    temp = 0
+                    eat = 6
+                }
+            }
+            if eat = 6
+            {
+                temp++
+                Rythm = 0
+                Send 7
+                Sleep 50
+                Send {Click}
+                Sleep 5000
+                Send 7
+                Sleep 200
+                Send 1
+                if temp = 5
+                {
+                    temp = 0
+                    eat = 7
+                }
+            }
+            if eat = 7
+            {
+                temp++
+                Rythm = 0
+                Send 8
+                Sleep 50
+                Send {Click}
+                Sleep 5000
+                Send 8
+                Sleep 200
+                Send 1
+                if temp = 5
+                {
+                    temp = 0
+                    eat = 8
+                }
+            }
+            if eat = 8
+            {
+                temp++
+                Rythm = 0
+                Send 9
+                Sleep 50
+                Send {Click}
+                Sleep 5000
+                Send 9
+                Sleep 200
+                Send 1
+                if temp = 5
+                {
+                    temp = 0
+                    eat = 9
+                }
+            }
+            if eat = 9
+            {
+                temp++
+                Rythm = 0
+                Send 0
+                Sleep 50
+                Send {Click}
+                Sleep 5000
+                Send 0
+                Sleep 200
+                Send 1
+                if temp = 5
+                {
+                    temp = 0
+                    eat = 10
+                }
+            }
+            If eat = 10
+            {
+                Send !{f4}
+                reload
             }
         }
-        PixelSearch, x, y, 186, 565, 187, 566, 0xEBEBEB,, Fast
+        PixelSearch, x, y, 39, 159, 41, 161, 0x9299BC,, Fast ; logs when hungry
         If ErrorLevel = 0
         {
             Send !{f4}
             Reload
         }
-        PixelSearch, x, y, 39, 159, 41, 161, 0x9299BC,, Fast
-        If ErrorLevel = 0
-        {
-            Send !{f4}
-            Reload
-        }
-        PixelSearch, x, y, 409,151, 411,153, 0x242424,, Fast
+        PixelSearch, x, y, 409,151, 411,153, 0x242424,, Fast ;auto flow
         If ErrorLevel = 0
         {
             Sleep 100
